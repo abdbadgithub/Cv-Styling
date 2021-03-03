@@ -1,0 +1,72 @@
+header {
+  background-color: gray;
+  height: 200px;
+}
+hgroup {
+  color: red;
+}
+header > div {
+  display: flex;
+}
+#about {
+  width: 50%;
+  float: left;
+}
+
+#experiences {
+  width: 50%;
+  float: left;
+}
+h3:before {
+  content: "\A";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: red;
+  display: inline-block;
+  margin-right: 10px;
+}
+.experience {
+  border-top: 1px solid gray;
+}
+.experience-type {
+  color: red;
+  font-weight: bold;
+}
+.experience-institution {
+  color: red;
+  font-weight: lighter;
+}
+.experience-details {
+  color: gray;
+}
+#contact {
+  margin-top: -850px;
+  text-align: right;
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#contact > h3 {
+  display: none;
+}
+
+#hobbies {
+  border-top: 1px solid gray;
+}
+
+@media (max-width: 787px) {
+  .about {
+    float: left;
+    width: 20%;
+  }
+  .skills {
+    float: left;
+    width: 20%;
+  }
+  #contact {
+    margin-top: 0px;
+  }
+}
