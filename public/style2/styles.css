@@ -1,0 +1,102 @@
+div[id="#wrapper"] {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+h2 {
+  display: none;
+}
+#about > h3 {
+  display: none;
+}
+figure {
+  margin-left: 75%;
+}
+figure > img {
+  transform: rotate(344deg);
+  width: 150px;
+  height: 150px;
+}
+#about > p {
+  width: 65%;
+  margin-top: -15%;
+}
+#competencies {
+  display: flex;
+  flex-direction: column;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+
+  column-gap: 10px;
+}
+.skill:after {
+  content: "✭";
+
+  white-space: pre;
+  width: 20px;
+  height: 20px;
+
+  display: inline-block;
+  margin-right: 10px;
+}
+.skill {
+  background-color: green;
+}
+.skills-primary {
+  margin-bottom: 10px;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid gray;
+  align-items: center;
+  margin-top: -40px;
+}
+.contact-email .contact-value,
+.contact-phone .contact-value,
+.contact-github .contact-value,
+contact-facebook .contact-value {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.contact-email .contact-value a::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/email.png);
+  background-size: cover;
+  background-position: center;
+}
+.contact-phone .contact-value a::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/phone.png);
+  background-size: cover;
+}
+.contact-github .contact-value a::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/github.png);
+  background-size: cover;
+}
+.contact-facebook .contact-value a::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/facebook.png);
+  background-size: cover;
+}
+.contact-type {
+  display: none;
+}
+.contact-value {
+  float: left;
+}
